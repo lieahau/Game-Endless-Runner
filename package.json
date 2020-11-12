@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "webpack",
+    "dev": "webpack --watch & live-server --port=8080",
     "start": "node server.js"
   },
   "author": "Budiman Putra Jaya",

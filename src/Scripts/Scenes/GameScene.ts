@@ -74,7 +74,7 @@ export class GameScene extends Phaser.Scene
 
     private CreateOffscreen(): void
     {
-        this.offScreen = this.add.container(32, 0);
+        this.offScreen = this.add.container(-128, 0);
         this.offScreen.setSize(64, 1440);
         this.physics.world.enable(this.offScreen);
         (this.offScreen.body as Phaser.Physics.Arcade.Body).setImmovable(true);
@@ -161,7 +161,7 @@ export class GameScene extends Phaser.Scene
         let yPos: number;
         let key: string = "";
 
-        let rnd = Phaser.Math.Between(2, 2); // 0 = fence, 1 = spinner, 2 = diamond
+        let rnd = Phaser.Math.Between(0, 2); // 0 = fence, 1 = spinner, 2 = diamond
         if(rnd == 0)
         {
             key = "obstacle_fence";
