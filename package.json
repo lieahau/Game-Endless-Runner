@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A simple Endless Runner game",
   "main": "app.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "build": "webpack",
     "start": "node server.js",
