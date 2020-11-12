@@ -2,10 +2,11 @@
   "name": "endless-runner",
   "version": "0.1.0",
   "description": "A simple Endless Runner game",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack --watch & live-server --port=8085"
+    "start": "webpack --watch & live-server --port=8085",
+    "heroku-postbuild": "ng build --prod"
   },
   "author": "Budiman Putra Jaya",
   "license": "MIT",
