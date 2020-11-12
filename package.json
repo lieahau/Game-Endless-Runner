@@ -4,9 +4,8 @@
   "description": "A simple Endless Runner game",
   "main": "app.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack --watch & live-server --port=8085",
-    "heroku-postbuild": "ng build --prod"
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "dev": "webpack-dev-server"
   },
   "author": "Budiman Putra Jaya",
   "license": "MIT",
